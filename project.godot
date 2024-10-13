@@ -12,8 +12,8 @@ config_version=5
 
 config/name="地下党逃生"
 config/tags=PackedStringArray("demo")
-run/main_scene="res://player.tscn"
-config/features=PackedStringArray("4.3", "Mobile")
+run/main_scene="res://main.tscn"
+config/features=PackedStringArray("4.4", "Mobile")
 config/icon="res://icon.svg"
 
 [display]
