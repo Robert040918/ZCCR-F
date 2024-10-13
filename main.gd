@@ -12,12 +12,18 @@ func _ready():
 func game_over():
 	$ScoreTimer.stop()
 	$MobTimer.stop()
+	$Music.stop()
+	$HUD.show_game_over()
+	$DeathSound.play()
 
 func new_game():
+	$Music.play()
 	score = 0
+	get_tree().call_group("mobs", "queue_free")
 	$player.start($StartPosition.position)
 	$StartTimer.start()
-
+	$HUD.update_score(score)
+	$HUD.show_message("Get Ready")
 
 func _on_mob_timer_timeout():
 	# 创建怪物实例
@@ -44,7 +50,7 @@ func _on_mob_timer_timeout():
 
 func _on_score_timer_timeout():
 	score += 1
-
+	$HUD.update_score(score)
 
 func _on_start_timer_timeout():
 	$MobTimer.start()
