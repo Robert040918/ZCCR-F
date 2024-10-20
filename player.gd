@@ -14,13 +14,13 @@ func _ready():
 func _process(delta):
 	var velocity = Vector2.ZERO
 	# 玩家向量移动
-	if Input.is_action_pressed("move_up"):
+	if Input.is_action_pressed("ui_up"):
 		velocity.y -= 1
-	if Input.is_action_pressed("move_down"):
+	if Input.is_action_pressed("ui_down"):
 		velocity.y += 1
-	if Input.is_action_pressed("move_left"):
+	if Input.is_action_pressed("ui_left"):
 		velocity.x -= 1
-	if Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 	
 	# 速度归一化
