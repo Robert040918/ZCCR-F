@@ -44,9 +44,8 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qs3iq"]
-radius = 36.0
-height = 100.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_vs58y"]
+radius = 29.1548
 
 [node name="mob" type="RigidBody2D" groups=["mobs"]]
 collision_mask = 0
@@ -56,11 +55,12 @@ script = ExtResource("1_bmhvl")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_8twpr")
-animation = &"walk"
+animation = &"swim"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11, 0)
 rotation = 1.5708
-shape = SubResource("CapsuleShape2D_qs3iq")
+shape = SubResource("CircleShape2D_vs58y")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 

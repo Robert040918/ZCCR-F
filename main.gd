@@ -2,27 +2,33 @@ extends Node
 
 @export var mob_scene: PackedScene
 var score
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	#new_game()
-	pass
-
-
+	$HUD.toload()
+	
 func game_over():
-	$ScoreTimer.stop()
+	$GameTimer.stop()
 	$MobTimer.stop()
 	$Music.stop()
 	$HUD.show_game_over()
 	$DeathSound.play()
-
+	$HUD.score_group.append(score)
+	$HUD.tosave()
+	$HUD.toload()
+	#print($HUD.score_group)
+	
 func new_game():
 	$Music.play()
 	score = 0
+	$HUD.toload()
 	get_tree().call_group("mobs", "queue_free")
 	$player.start($StartPosition.position)
 	$StartTimer.start()
 	$HUD.update_score(score)
+	$HUD.update_best_score()
+	$HUD.show_message("在按键上移动手指就可移动")
+	await $HUD/MessageTimer.timeout
 	$HUD.show_message("Get Ready")
 
 func _on_mob_timer_timeout():
@@ -41,18 +47,20 @@ func _on_mob_timer_timeout():
 	mob.rotation = direction
 	
 	# 随机选择怪物的移动速度
-	var velocity = Vector2(randf_range(150.0, 250.0), 0.0)
+	var velocity = Vector2(randf_range(100.0, 250.0), 0.0)
 	mob.linear_velocity = velocity.rotated(direction)
 	
 	# 将新实例添加到场景中
 	add_child(mob)
 
 
-func _on_score_timer_timeout():
+func _on_game_timer_timeout():
 	score += 1
+	$MobTimer.wait_time -= 0.01
 	$HUD.update_score(score)
+	
 
 func _on_start_timer_timeout():
 	$MobTimer.start()
-	$ScoreTimer.start()
+	$GameTimer.start()
 	

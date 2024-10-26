@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dfgxl6ac2lavg"]
 
-[ext_resource type="FontFile" uid="uid://dtu3335qddcnd" path="res://fonts/刘欢卡通手书 Regular.ttf" id="1_jt38a"]
+[ext_resource type="FontFile" uid="uid://3o0lslg887sr" path="res://fonts/刘欢卡通手书 Regular.ttf" id="1_jt38a"]
 [ext_resource type="Script" path="res://hud.gd" id="1_owhql"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_pseme"]
@@ -11,6 +11,32 @@ events = [SubResource("InputEventAction_pseme")]
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource("1_owhql")
+
+[node name="BestScoreLabel" type="Label" parent="."]
+offset_right = 175.0
+offset_bottom = 65.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_jt38a")
+theme_override_font_sizes/font_size = 64
+text = "最高
+0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabelBox" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -16.5
+offset_bottom = 16.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_jt38a")
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="ScoreLabel" type="Label" parent="."]
 anchors_preset = 5
@@ -42,13 +68,12 @@ grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_fonts/font = ExtResource("1_jt38a")
 theme_override_font_sizes/font_size = 64
-text = "欢迎来到Robert
-的第一个游戏
+text = "欢迎来到Robert的第一个游戏
 🙏感谢周茉抹🙏
 🙏感谢吴思明🙏"
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 2
+autowrap_mode = 3
 
 [node name="StartButton" type="Button" parent="."]
 anchors_preset = 7

@@ -41,9 +41,10 @@ color = Color(0.369612, 0.584328, 0.626438, 1)
 [node name="player" parent="." instance=ExtResource("1_saaot")]
 
 [node name="MobTimer" type="Timer" parent="."]
-wait_time = 0.5
+wait_time = 2.0
 
-[node name="ScoreTimer" type="Timer" parent="."]
+[node name="GameTimer" type="Timer" parent="."]
+process_callback = 0
 
 [node name="StartTimer" type="Timer" parent="."]
 wait_time = 2.0
@@ -70,6 +71,6 @@ metadata/_edit_lock_ = true
 
 [connection signal="hit" from="player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
-[connection signal="timeout" from="ScoreTimer" to="." method="_on_score_timer_timeout"]
+[connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="start_game" from="HUD" to="." method="new_game"]

@@ -1,7 +1,7 @@
 extends Area2D
 signal hit
 
-@export var speed = 400 # 玩家角色的速度
+@export var speed = 350 # 玩家角色的速度
 var screen_size
 
 # Called when the node enters the scene tree for the first time.
@@ -48,6 +48,7 @@ func _process(delta):
 
 
 func _on_body_entered(body):
+	await get_tree().create_timer(0.2).timeout
 	hide() # 碰撞后消失
 	hit.emit()
 	# 禁用碰撞检测
