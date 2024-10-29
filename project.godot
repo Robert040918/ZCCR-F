@@ -10,16 +10,13 @@ config_version=5
 
 [application]
 
-config/name="ZCCRfirstgame-demo"
-config/name_localized={
-"zh": "ZCCR的第一个游戏"
-}
+config/name="ZCCR-F"
 config/description="制作人：Robert, 周茉抹"
-config/version="0.0.0"
+config/version="0.1"
 config/tags=PackedStringArray("demo")
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
-config/icon="res://art/image/Untitled 10-04-2024 05-41-30_edit_79039138538459.png"
+config/icon="res://art/image/Untitled 10-27-2024 07-23-09.png"
 boot_splash/image="res://art/image/IMG_20240924_212306_edit_24848981456103.jpg"
 
 [display]
