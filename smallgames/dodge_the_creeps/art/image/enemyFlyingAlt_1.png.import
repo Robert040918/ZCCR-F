@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs88risupvoki"
-path="res://.godot/imported/Sticker_202494215748.png-22e3fc6deb12e7ec3b4723c13bf62d27.ctex"
+uid="uid://ct66th52r1esb"
+path="res://.godot/imported/enemyFlyingAlt_1.png-921764ec894b39db579a28f3ee0e90ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/image/Sticker_202494215748.png"
-dest_files=["res://.godot/imported/Sticker_202494215748.png-22e3fc6deb12e7ec3b4723c13bf62d27.ctex"]
+source_file="res://smallgames/dodge_the_creeps/art/image/enemyFlyingAlt_1.png"
+dest_files=["res://.godot/imported/enemyFlyingAlt_1.png-921764ec894b39db579a28f3ee0e90ed.ctex"]
 
 [params]
 

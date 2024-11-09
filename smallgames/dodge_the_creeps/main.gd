@@ -58,9 +58,11 @@ func _on_game_timer_timeout():
 	score += 1
 	$MobTimer.wait_time -= 0.01
 	$HUD.update_score(score)
+	$MobPath._ready()
 	
 
 func _on_start_timer_timeout():
 	$MobTimer.start()
 	$GameTimer.start()
+	$MobTimer.wait_time = 2.0
 	

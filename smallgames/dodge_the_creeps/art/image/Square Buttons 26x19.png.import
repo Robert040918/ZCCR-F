@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://f3ulqcol6reb"
-path="res://.godot/imported/enemyWalking_2.png-e2de228d165fa137584ab4fccfddc616.ctex"
+uid="uid://bu3j4y5ud68a3"
+path="res://.godot/imported/Square Buttons 26x19.png-e4914ea1243d92b5738b786528f7b89f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/image/enemyWalking_2.png"
-dest_files=["res://.godot/imported/enemyWalking_2.png-e2de228d165fa137584ab4fccfddc616.ctex"]
+source_file="res://smallgames/dodge_the_creeps/art/image/Square Buttons 26x19.png"
+dest_files=["res://.godot/imported/Square Buttons 26x19.png-e4914ea1243d92b5738b786528f7b89f.ctex"]
 
 [params]
 

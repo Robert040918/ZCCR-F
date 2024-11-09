@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsxyvq61yu7t4"
-path="res://.godot/imported/playerGrey_up1.png-ead4ce7c6222dc1cf2cc598eed6936c7.ctex"
+uid="uid://celqaeyepqj7d"
+path="res://.godot/imported/playerGrey_walk2.png-5df2a9789f4bc17994c230305d5e047a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/image/playerGrey_up1.png"
-dest_files=["res://.godot/imported/playerGrey_up1.png-ead4ce7c6222dc1cf2cc598eed6936c7.ctex"]
+source_file="res://smallgames/dodge_the_creeps/art/image/playerGrey_walk2.png"
+dest_files=["res://.godot/imported/playerGrey_walk2.png-5df2a9789f4bc17994c230305d5e047a.ctex"]
 
 [params]
 

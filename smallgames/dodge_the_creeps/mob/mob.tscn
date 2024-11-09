@@ -1,12 +1,12 @@
 [gd_scene load_steps=10 format=3 uid="uid://mwxogexi1l0n"]
 
-[ext_resource type="Texture2D" uid="uid://dfejp6uvgoggl" path="res://art/image/enemyFlyingAlt_2.png" id="1_0wipa"]
-[ext_resource type="Script" path="res://mob.gd" id="1_bmhvl"]
-[ext_resource type="Texture2D" uid="uid://ct66th52r1esb" path="res://art/image/enemyFlyingAlt_1.png" id="1_i35uh"]
-[ext_resource type="Texture2D" uid="uid://crchy5he82o8g" path="res://art/image/enemySwimming_1.png" id="2_ke0fm"]
-[ext_resource type="Texture2D" uid="uid://dmimctbdd6vok" path="res://art/image/enemySwimming_2.png" id="3_trlem"]
-[ext_resource type="Texture2D" uid="uid://32eiswd4go2i" path="res://art/image/enemyWalking_1.png" id="4_lr5a7"]
-[ext_resource type="Texture2D" uid="uid://f3ulqcol6reb" path="res://art/image/enemyWalking_2.png" id="5_hlukl"]
+[ext_resource type="Texture2D" uid="uid://dfejp6uvgoggl" path="res://smallgames/dodge_the_creeps/art/image/enemyFlyingAlt_2.png" id="1_0wipa"]
+[ext_resource type="Script" path="res://smallgames/dodge_the_creeps/mob/mob.gd" id="1_bmhvl"]
+[ext_resource type="Texture2D" uid="uid://ct66th52r1esb" path="res://smallgames/dodge_the_creeps/art/image/enemyFlyingAlt_1.png" id="1_i35uh"]
+[ext_resource type="Texture2D" uid="uid://crchy5he82o8g" path="res://smallgames/dodge_the_creeps/art/image/enemySwimming_1.png" id="2_ke0fm"]
+[ext_resource type="Texture2D" uid="uid://dmimctbdd6vok" path="res://smallgames/dodge_the_creeps/art/image/enemySwimming_2.png" id="3_trlem"]
+[ext_resource type="Texture2D" uid="uid://32eiswd4go2i" path="res://smallgames/dodge_the_creeps/art/image/enemyWalking_1.png" id="4_lr5a7"]
+[ext_resource type="Texture2D" uid="uid://f3ulqcol6reb" path="res://smallgames/dodge_the_creeps/art/image/enemyWalking_2.png" id="5_hlukl"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8twpr"]
 animations = [{
