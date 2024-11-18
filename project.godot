@@ -31,6 +31,14 @@ window/handheld/orientation=6
 
 movie_writer/movie_file="/storage/emulated/10/ZCCR/zccr_firstgame/test_movies.avi"
 
+[file_customization]
+
+folder_colors={
+"res://art/": "blue",
+"res://fonts/": "blue",
+"res://gameapks/": "gray"
+}
+
 [input]
 
 move_up={
