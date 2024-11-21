@@ -66,3 +66,7 @@ func toload() -> void:
 		update_best_score()
 	else:
 		show_message("加载失败")
+
+
+func _on_return_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://HUD/main_hud.tscn")

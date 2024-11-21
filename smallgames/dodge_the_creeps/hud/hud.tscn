@@ -97,5 +97,17 @@ text = "start"
 wait_time = 2.0
 one_shot = true
 
+[node name="ReturnButton" type="Button" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -186.0
+offset_bottom = 97.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_jt38a")
+theme_override_font_sizes/font_size = 64
+text = "返回"
+
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="timeout" from="MessageTimer" to="." method="_on_message_timer_timeout"]
+[connection signal="pressed" from="ReturnButton" to="." method="_on_return_button_pressed"]
