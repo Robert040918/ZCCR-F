@@ -10,8 +10,8 @@
 
 #### 安装教程
 
-1.  直接在itch.io上体验：https://robert040918.itch.io/zccr-firstgame-demo
-2.  安装右侧发行版，已适配Android, Windows, Html5
+1.  (可能不是最新版本)直接在itch.io上体验：https://robert040918.itch.io/zccr-firstgame-demo
+2.  安装右侧发行版，已适配Android, Windows, Html5(后两者可能不是最新版本)
 
 #### 使用说明
 
