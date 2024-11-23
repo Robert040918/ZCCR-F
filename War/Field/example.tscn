@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://uqni6dxsnobj"]
 
 [ext_resource type="PackedScene" uid="uid://cyjuiynwr7yq2" path="res://War/Field/joystick.tscn" id="1_7l50t"]
-[ext_resource type="Script" path="res://War/Field/example.gd" id="1_668n3"]
+[ext_resource type="Script" uid="uid://cjoy36iregxgk" path="res://War/Field/example.gd" id="1_668n3"]
 [ext_resource type="PackedScene" uid="uid://by8v7526o8b12" path="res://War/Field/first.tscn" id="2_thi5c"]
 [ext_resource type="PackedScene" uid="uid://e4p0osqi8j52" path="res://War/Transportation/Cars/红鹰/红鹰.tscn" id="3_3e8k2"]
 [ext_resource type="FontFile" uid="uid://3o0lslg887sr" path="res://fonts/刘欢卡通手书 Regular.ttf" id="4_mc2qg"]

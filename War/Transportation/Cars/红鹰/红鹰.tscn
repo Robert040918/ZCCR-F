@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://e4p0osqi8j52"]
 
-[ext_resource type="Script" path="res://War/Transportation/Cars/红鹰/红鹰.gd" id="1_kwqin"]
+[ext_resource type="Script" uid="uid://cayvg8enhdqo6" path="res://War/Transportation/Cars/红鹰/红鹰.gd" id="1_kwqin"]
 [ext_resource type="Texture2D" uid="uid://6exwta4yvfx8" path="res://War/Transportation/Cars/红鹰/车身.png" id="1_udvub"]
 [ext_resource type="Texture2D" uid="uid://bwlcxy7p2quo1" path="res://War/Transportation/Cars/红鹰/轮子.png" id="2_no28e"]
 
