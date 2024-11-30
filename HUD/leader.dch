@@ -1,19 +1,6 @@
 {
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
-&"_translation_id": "",
-&"color": Color(1, 1, 1, 1),
-&"custom_info": {
-"sound_mood_default": "",
-"sound_moods": {},
-"style": ""
-},
-&"default_portrait": "idle",
-&"description": "",
-&"display_name": "leader",
-&"mirror": false,
-&"nicknames": [""],
-&"offset": Vector2(0, 0),
 &"portraits": {
 "idle": {
 "export_overrides": {
@@ -25,5 +12,18 @@
 "scene": "res://addons/dialogic/Modules/Character/default_portrait.tscn"
 }
 },
-&"scale": 1.0
+&"nicknames": [""],
+&"default_portrait": "idle",
+&"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+&"_translation_id": "",
+&"mirror": false,
+&"display_name": "leader",
+&"color": Color(1, 1, 1, 1),
+&"scale": 1.0,
+&"description": "",
+&"offset": Vector2(0, 0)
 }

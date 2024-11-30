@@ -1,9 +1,9 @@
 [gd_scene load_steps=11 format=4 uid="uid://cl4kg5xce085k"]
 
-[ext_resource type="Script" path="res://smallgames/dodge_the_creeps/main.gd" id="1_q77mw"]
+[ext_resource type="Script" uid="uid://j0grsctkxmiq" path="res://smallgames/dodge_the_creeps/main.gd" id="1_q77mw"]
 [ext_resource type="PackedScene" uid="uid://t2ptgstn8cfp" path="res://smallgames/dodge_the_creeps/player/player.tscn" id="1_saaot"]
 [ext_resource type="PackedScene" uid="uid://mwxogexi1l0n" path="res://smallgames/dodge_the_creeps/mob/mob.tscn" id="2_neyi0"]
-[ext_resource type="Script" path="res://smallgames/dodge_the_creeps/mob_path.gd" id="4_2bb1m"]
+[ext_resource type="Script" uid="uid://csa2bwgjd08ev" path="res://smallgames/dodge_the_creeps/mob_path.gd" id="4_2bb1m"]
 [ext_resource type="PackedScene" uid="uid://dfgxl6ac2lavg" path="res://smallgames/dodge_the_creeps/hud/hud.tscn" id="4_u21pc"]
 [ext_resource type="PackedScene" uid="uid://bnq5tqr1c4n8q" path="res://smallgames/dodge_the_creeps/joystick.tscn" id="5_pvg4w"]
 
@@ -67,6 +67,7 @@ stream = SubResource("AudioStreamOggVorbis_5n7ti")
 stream = SubResource("AudioStreamWAV_il4ig")
 
 [node name="joystick" parent="." instance=ExtResource("5_pvg4w")]
+top_level = true
 metadata/_edit_lock_ = true
 
 [connection signal="hit" from="player" to="." method="game_over"]

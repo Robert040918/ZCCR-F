@@ -19,17 +19,27 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.892199, 0.862965, 0.869598, 1)
+color = Color(0.522312, 0.717542, 0.679062, 1)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_thi5c")]
-
-[node name="joystick" parent="." instance=ExtResource("1_7l50t")]
-offset_left = 275.0
-offset_top = 700.0
-offset_right = 275.0
-offset_bottom = 700.0
+position = Vector2(-611, 79)
 
 [node name="汽车" parent="." instance=ExtResource("3_3e8k2")]
+position = Vector2(194, 144)
+
+[node name="joystick" parent="汽车" instance=ExtResource("1_7l50t")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 654.0
+offset_top = 124.0
+offset_right = 654.0
+offset_bottom = 124.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 4
 
 [node name="ReturnButton" type="Button" parent="."]
 anchors_preset = 1

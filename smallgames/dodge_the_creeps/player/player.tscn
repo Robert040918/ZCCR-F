@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://t2ptgstn8cfp"]
 
-[ext_resource type="Script" path="res://smallgames/dodge_the_creeps/player/player.gd" id="1_3sqfx"]
+[ext_resource type="Script" uid="uid://ba0ywsp1rajeu" path="res://smallgames/dodge_the_creeps/player/player.gd" id="1_3sqfx"]
 [ext_resource type="Texture2D" uid="uid://dsxyvq61yu7t4" path="res://smallgames/dodge_the_creeps/art/image/playerGrey_up1.png" id="1_mhu7p"]
 [ext_resource type="Texture2D" uid="uid://bom4lv1xgldw7" path="res://smallgames/dodge_the_creeps/art/image/playerGrey_up2.png" id="2_e76jy"]
 [ext_resource type="Texture2D" uid="uid://c4kvw8ttkc787" path="res://smallgames/dodge_the_creeps/art/image/playerGrey_walk1.png" id="3_lb0ip"]

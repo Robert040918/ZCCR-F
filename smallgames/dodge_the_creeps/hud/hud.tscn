@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dfgxl6ac2lavg"]
 
 [ext_resource type="FontFile" uid="uid://3o0lslg887sr" path="res://fonts/刘欢卡通手书 Regular.ttf" id="1_jt38a"]
-[ext_resource type="Script" path="res://smallgames/dodge_the_creeps/hud/hud.gd" id="1_owhql"]
+[ext_resource type="Script" uid="uid://byjkg8hosrmp4" path="res://smallgames/dodge_the_creeps/hud/hud.gd" id="1_owhql"]
 
 [sub_resource type="InputEventAction" id="InputEventAction_pseme"]
 action = &"start_game"
@@ -59,19 +59,20 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -240.0
-offset_top = -143.5
-offset_right = 240.0
-offset_bottom = 143.5
+offset_left = -435.5
+offset_top = -262.5
+offset_right = 435.5
+offset_bottom = 262.5
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.967174, 0.558345, 0.409684, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 60
 theme_override_fonts/font = ExtResource("1_jt38a")
-theme_override_font_sizes/font_size = 32
-text = "欢迎来到ZCCR-F中的一个小游戏
-请私聊我通知自己的账号密码
-🙏感谢周茉抹🙏
-🙏感谢吴客🙏"
+theme_override_font_sizes/font_size = 128
+text = "Dodge the Creeps"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 3
