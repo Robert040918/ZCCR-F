@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://keyfed1diljf"
-path="res://.godot/imported/fall_island_tilesheet_1.png-893957423e0a369e547291726c46cb06.ctex"
+path="res://.godot/imported/fall_island_tilesheet_1.png-a7bec218699e402a1da01c5669bd0d85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Home/Fields/fall_island_tilesheet_1.png"
-dest_files=["res://.godot/imported/fall_island_tilesheet_1.png-893957423e0a369e547291726c46cb06.ctex"]
+source_file="res://Home/assets/Fields/fall_island_tilesheet_1.png"
+dest_files=["res://.godot/imported/fall_island_tilesheet_1.png-a7bec218699e402a1da01c5669bd0d85.ctex"]
 
 [params]
 

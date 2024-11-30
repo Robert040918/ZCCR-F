@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvxvf8fma6vc7"
-path="res://.godot/imported/spring_outdoorsTileSheet2.png-ee259aed86ff040c2301e34d93335771.ctex"
+path="res://.godot/imported/spring_outdoorsTileSheet2.png-066ee5bf78e9cdfe046eba54ba1116cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Home/Fields/spring_outdoorsTileSheet2.png"
-dest_files=["res://.godot/imported/spring_outdoorsTileSheet2.png-ee259aed86ff040c2301e34d93335771.ctex"]
+source_file="res://Home/assets/Fields/spring_outdoorsTileSheet2.png"
+dest_files=["res://.godot/imported/spring_outdoorsTileSheet2.png-066ee5bf78e9cdfe046eba54ba1116cc.ctex"]
 
 [params]
 

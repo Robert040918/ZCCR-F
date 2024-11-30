@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cp78mjj4wt1qv"
-path="res://.godot/imported/island_tilesheet_1.png-9b428e0c86441af4fd5ecc3d732738de.ctex"
+path="res://.godot/imported/island_tilesheet_1.png-bc7a03efe6c64215c6ed1b4d691ceeda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Home/Fields/island_tilesheet_1.png"
-dest_files=["res://.godot/imported/island_tilesheet_1.png-9b428e0c86441af4fd5ecc3d732738de.ctex"]
+source_file="res://Home/assets/Fields/island_tilesheet_1.png"
+dest_files=["res://.godot/imported/island_tilesheet_1.png-bc7a03efe6c64215c6ed1b4d691ceeda.ctex"]
 
 [params]
 

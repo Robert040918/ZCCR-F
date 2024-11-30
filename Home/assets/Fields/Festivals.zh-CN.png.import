@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkfdyfsdg8dah"
-path="res://.godot/imported/Festivals.zh-CN.png-b11582227e6976b9b151849be8b2b8ff.ctex"
+path="res://.godot/imported/Festivals.zh-CN.png-e0a823a7e615de0744cad4fb4612fe6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Home/Fields/Festivals.zh-CN.png"
-dest_files=["res://.godot/imported/Festivals.zh-CN.png-b11582227e6976b9b151849be8b2b8ff.ctex"]
+source_file="res://Home/assets/Fields/Festivals.zh-CN.png"
+dest_files=["res://.godot/imported/Festivals.zh-CN.png-e0a823a7e615de0744cad4fb4612fe6c.ctex"]
 
 [params]
 

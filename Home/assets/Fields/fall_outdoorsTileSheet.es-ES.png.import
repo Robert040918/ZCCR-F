@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dvscgl53y1x7t"
-path="res://.godot/imported/fall_outdoorsTileSheet.es-ES.png-eac0308d633d60f2ee682db4bc282997.ctex"
+path="res://.godot/imported/fall_outdoorsTileSheet.es-ES.png-c1755e33046c5f45ced371236bf3fdd0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Home/Fields/fall_outdoorsTileSheet.es-ES.png"
-dest_files=["res://.godot/imported/fall_outdoorsTileSheet.es-ES.png-eac0308d633d60f2ee682db4bc282997.ctex"]
+source_file="res://Home/assets/Fields/fall_outdoorsTileSheet.es-ES.png"
+dest_files=["res://.godot/imported/fall_outdoorsTileSheet.es-ES.png-c1755e33046c5f45ced371236bf3fdd0.ctex"]
 
 [params]
 

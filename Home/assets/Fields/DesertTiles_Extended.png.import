@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmf3x1c5jchrc"
-path="res://.godot/imported/DesertTiles_Extended.png-0a1ba519dae8a87e5fa938d451ff39dd.ctex"
+path="res://.godot/imported/DesertTiles_Extended.png-851781607339ed5902f7af07d78986c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Home/Fields/DesertTiles_Extended.png"
-dest_files=["res://.godot/imported/DesertTiles_Extended.png-0a1ba519dae8a87e5fa938d451ff39dd.ctex"]
+source_file="res://Home/assets/Fields/DesertTiles_Extended.png"
+dest_files=["res://.godot/imported/DesertTiles_Extended.png-851781607339ed5902f7af07d78986c8.ctex"]
 
 [params]
 
