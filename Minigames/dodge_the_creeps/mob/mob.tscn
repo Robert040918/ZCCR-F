@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://mwxogexi1l0n"]
+
+[ext_resource type="Texture2D" uid="uid://dfejp6uvgoggl" path="res://Minigames/dodge_the_creeps/art/image/enemyFlyingAlt_2.png" id="1_0wipa"]
+[ext_resource type="Script" path="res://Minigames/dodge_the_creeps/mob/mob.gd" id="1_bmhvl"]
+[ext_resource type="Texture2D" uid="uid://ct66th52r1esb" path="res://Minigames/dodge_the_creeps/art/image/enemyFlyingAlt_1.png" id="1_i35uh"]
+[ext_resource type="Texture2D" uid="uid://crchy5he82o8g" path="res://Minigames/dodge_the_creeps/art/image/enemySwimming_1.png" id="2_ke0fm"]
+[ext_resource type="Texture2D" uid="uid://dmimctbdd6vok" path="res://Minigames/dodge_the_creeps/art/image/enemySwimming_2.png" id="3_trlem"]
+[ext_resource type="Texture2D" uid="uid://32eiswd4go2i" path="res://Minigames/dodge_the_creeps/art/image/enemyWalking_1.png" id="4_lr5a7"]
+[ext_resource type="Texture2D" uid="uid://f3ulqcol6reb" path="res://Minigames/dodge_the_creeps/art/image/enemyWalking_2.png" id="5_hlukl"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8twpr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_i35uh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_0wipa")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ke0fm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_trlem")
+}],
+"loop": true,
+"name": &"swim",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_lr5a7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hlukl")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vs58y"]
+radius = 29.1548
+
+[node name="mob" type="RigidBody2D" groups=["mobs"]]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("1_bmhvl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_8twpr")
+animation = &"swim"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11, 0)
+rotation = 1.5708
+shape = SubResource("CircleShape2D_vs58y")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

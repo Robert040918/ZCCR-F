@@ -21,17 +21,16 @@ boot_splash/image="res://art/image/IMG_20240924_212306_edit_24848981456103.jpg"
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Signal_Debugger="*res://addons/SignalVisualizer/Debugger/SignalDebugger.gd"
 
 [dialogic]
 
 directories/dch_directory={
-"ShiYan": "res://Home/Contents/Characters/NPCs/ShiYan/ShiYan.dch",
-"character": "res://Home/character.dch",
-"leader": "res://HUD/leader.dch"
+"character": "res://Tests/Dialogs/character.dch",
+"leader": "res://Tests/Dialogs/leader.dch"
 }
 directories/dtl_directory={
-"leader": "res://HUD/leader.dtl",
-"timeline": "res://Home/Contents/Characters/NPCs/ShiYan/timeline.dtl"
+"leader": "res://Tests/Dialogs/leader.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -70,15 +69,17 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/LPCAnimatedSprite/plugin.cfg", "res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/LPCAnimatedSprite/plugin.cfg", "res://addons/SignalVisualizer/plugin.cfg", "res://addons/dialogic/plugin.cfg")
 
 [file_customization]
 
 folder_colors={
+"res://Tests/": "pink",
 "res://addons/": "orange",
 "res://art/": "blue",
 "res://fonts/": "blue",
-"res://gameapks/": "gray"
+"res://gameapks/": "gray",
+"res://游戏文件暂存柜/": "gray"
 }
 
 [input]
