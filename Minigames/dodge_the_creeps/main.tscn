@@ -36,7 +36,6 @@ grow_vertical = 2
 color = Color(0.369612, 0.584328, 0.626438, 1)
 
 [node name="player" parent="." instance=ExtResource("1_saaot")]
-script = null
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 2.0
@@ -71,6 +70,7 @@ stream = SubResource("AudioStreamWAV_il4ig")
 top_level = true
 metadata/_edit_lock_ = true
 
+[connection signal="hit" from="player" to="." method="game_over"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
 [connection signal="timeout" from="GameTimer" to="." method="_on_game_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]

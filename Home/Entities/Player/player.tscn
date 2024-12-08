@@ -1,6 +1,7 @@
-[gd_scene load_steps=231 format=3 uid="uid://cpiej8v2kvfxs"]
+[gd_scene load_steps=232 format=3 uid="uid://cpiej8v2kvfxs"]
 
-[ext_resource type="Texture2D" uid="uid://da7r5kpttysov" path="res://Home/Player/art/player.png" id="1_6syhf"]
+[ext_resource type="Texture2D" uid="uid://da7r5kpttysov" path="res://Home/Entities/Player/Art/player.png" id="1_6syhf"]
+[ext_resource type="Script" path="res://Home/Entities/Player/player.gd" id="1_nwffj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wrdpp"]
 atlas = ExtResource("1_6syhf")
@@ -1768,14 +1769,14 @@ animations = [{
 radius = 8.24621
 
 [node name="Player" type="CharacterBody2D"]
-motion_mode = 1
+script = ExtResource("1_nwffj")
 
-[node name="player" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_8id21")
-animation = &"CAST_UP"
-frame = 6
-frame_progress = 1.0
+animation = &"WALK_UP"
+autoplay = "CAST_DOWN"
+speed_scale = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 texture_filter = 1

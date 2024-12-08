@@ -2,8 +2,8 @@ extends CanvasLayer
 
 # 创建新的 ConfigFile 对象。
 var config = ConfigFile.new()
-var score_group = [ ]
-var best_score = 0
+var score_group  = [ ]
+var best_score: int = 0
 # 按钮按下发出信号
 signal start_game
 
@@ -56,7 +56,7 @@ func tosave() -> void:
 	
 	# 将其保存到文件中（如果已存在则覆盖）。
 	config.save("user://scores.cfg")
-	config.save("res://Data/scores.cfg")
+	config.save("res://Minigames/dodge_the_creeps/Data/scores.cfg")
 	
 func toload() -> void:
 	# 从文件加载数据。

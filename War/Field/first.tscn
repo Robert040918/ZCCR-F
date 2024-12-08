@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://by8v7526o8b12"]
+[gd_scene format=3 uid="uid://de3lx7yruk4h4"]
 
 [node name="StaticBody2D" type="StaticBody2D"]
 
@@ -11,3 +11,4 @@ offset_bottom = 576.0
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
 position = Vector2(110, 495)
 polygon = PackedVector2Array(-2342, 18, 2488, 20, 2490, 84, -1206, 95, -2333, 82)
+disabled = true

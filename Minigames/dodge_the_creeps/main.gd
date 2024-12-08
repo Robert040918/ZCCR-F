@@ -6,6 +6,7 @@ var score: int
 func _ready():
 	#new_game()
 	$HUD.toload()
+	$MobPath._ready()
 	
 func game_over():
 	$GameTimer.stop()

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cyjuiynwr7yq2"]
 
-[ext_resource type="Texture2D" uid="uid://bu3j4y5ud68a3" path="res://smallgames/dodge_the_creeps/art/image/Square Buttons 26x19.png" id="2_0leyx"]
+[ext_resource type="Texture2D" uid="uid://bu3j4y5ud68a3" path="res://Minigames/dodge_the_creeps/art/image/Square Buttons 26x19.png" id="2_0leyx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bxrlt"]
 atlas = ExtResource("2_0leyx")
