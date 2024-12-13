@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cyjuiynwr7yq2"]
 
-[ext_resource type="Texture2D" uid="uid://bu3j4y5ud68a3" path="res://Minigames/dodge_the_creeps/art/image/Square Buttons 26x19.png" id="2_0leyx"]
+[ext_resource type="Texture2D" uid="uid://bu3j4y5ud68a3" path="res://smallgames/dodge_the_creeps/art/image/Square Buttons 26x19.png" id="2_0leyx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bxrlt"]
 atlas = ExtResource("2_0leyx")
@@ -15,15 +15,15 @@ layout_mode = 3
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 312.0
+offset_left = 289.0
 offset_top = 263.0
-offset_right = 312.0
+offset_right = 289.0
 offset_bottom = 263.0
 grow_vertical = 2
 scale = Vector2(3, 3)
 
 [node name="TouchScreenButton_left" type="TouchScreenButton" parent="."]
-position = Vector2(0, -65.3333)
+position = Vector2(-38.8, -30.8)
 scale = Vector2(1.603, 2)
 texture_normal = SubResource("AtlasTexture_bxrlt")
 texture_pressed = SubResource("AtlasTexture_42lt8")
@@ -31,7 +31,7 @@ passby_press = true
 action = "ui_left"
 
 [node name="TouchScreenButton_right" type="TouchScreenButton" parent="."]
-position = Vector2(-3.05176e-05, -27.3333)
+position = Vector2(232.667, -30.6667)
 scale = Vector2(1.603, 2)
 texture_normal = SubResource("AtlasTexture_bxrlt")
 texture_pressed = SubResource("AtlasTexture_42lt8")

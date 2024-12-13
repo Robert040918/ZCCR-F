@@ -12,25 +12,23 @@ config_version=5
 
 config/name="ZCCR-F"
 config/description="制作人：Robert, 周茉抹"
-config/tags=PackedStringArray("alpha", "demo")
+config/tags=PackedStringArray("demo")
 run/main_scene="res://HUD/main_hud.tscn"
 config/features=PackedStringArray("4.4", "Mobile")
-boot_splash/bg_color=Color(0.560957, 0.758835, 0.919261, 1)
 config/icon="res://art/image/Untitled 10-27-2024 07-23-09.png"
 boot_splash/image="res://art/image/IMG_20240924_212306_edit_24848981456103.jpg"
 
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
-Signal_Debugger="*res://addons/SignalVisualizer/Debugger/SignalDebugger.gd"
 
 [dialogic]
 
 directories/dch_directory={
-"leader": "res://Tests/Dialogs/leader.dch"
+"leader": "res://HUD/leader.dch"
 }
 directories/dtl_directory={
-"leader": "res://Tests/Dialogs/leader.dtl"
+"leader": "res://HUD/leader.dtl"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -69,22 +67,16 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/SignalVisualizer/plugin.cfg", "res://addons/dialogic/plugin.cfg", "res://addons/rmsmartshape/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
 
 [file_customization]
 
 folder_colors={
-"res://Tests/": "pink",
 "res://addons/": "orange",
 "res://art/": "blue",
 "res://fonts/": "blue",
-"res://gameapks/": "gray",
-"res://游戏文件暂存柜/": "gray"
+"res://gameapks/": "gray"
 }
-
-[gui]
-
-theme/custom_font="res://fonts/刘欢卡通手书 Regular.ttf"
 
 [input]
 
