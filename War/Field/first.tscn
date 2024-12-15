@@ -1,22 +1,18 @@
 [gd_scene load_steps=3 format=3 uid="uid://by8v7526o8b12"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_s025x"]
-friction = 100.0
-rough = true
-absorbent = true
-
 [sub_resource type="CurveXYZTexture" id="CurveXYZTexture_aocda"]
 width = 70
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_7jq60"]
+distance = 65.0
+
 [node name="StaticBody2D" type="StaticBody2D"]
-physics_material_override = SubResource("PhysicsMaterial_s025x")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1128.5, 681)
 scale = Vector2(110.529, 148)
 texture = SubResource("CurveXYZTexture_aocda")
 
-[node name="CollisionShape2D" type="CollisionPolygon2D" parent="."]
-position = Vector2(1579, -1116)
-scale = Vector2(2.28116, 2.92357)
-polygon = PackedVector2Array(-1248, 590, 863, 590, 874, 587, -155.024, 621.205)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(176, 674)
+shape = SubResource("WorldBoundaryShape2D_7jq60")

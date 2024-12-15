@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://uqni6dxsnobj"]
 
 [ext_resource type="PackedScene" uid="uid://cyjuiynwr7yq2" path="res://War/Field/joystick.tscn" id="1_7l50t"]
-[ext_resource type="Script" uid="uid://cjoy36iregxgk" path="res://War/Field/example.gd" id="1_668n3"]
+[ext_resource type="Script" path="res://War/Field/example.gd" id="1_668n3"]
 [ext_resource type="PackedScene" uid="uid://by8v7526o8b12" path="res://War/Field/first.tscn" id="2_thi5c"]
 [ext_resource type="PackedScene" uid="uid://e4p0osqi8j52" path="res://War/Transportation/Cars/红鹰/红鹰.tscn" id="3_3e8k2"]
 [ext_resource type="FontFile" uid="uid://3o0lslg887sr" path="res://fonts/刘欢卡通手书 Regular.ttf" id="4_mc2qg"]
@@ -23,13 +23,24 @@ color = Color(0.892199, 0.862965, 0.869598, 1)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("2_thi5c")]
 
-[node name="joystick" parent="." instance=ExtResource("1_7l50t")]
-offset_left = 275.0
-offset_top = 700.0
-offset_right = 275.0
-offset_bottom = 700.0
-
 [node name="汽车" parent="." instance=ExtResource("3_3e8k2")]
+position = Vector2(331, 193)
+
+[node name="Camera2D" type="Camera2D" parent="汽车"]
+position = Vector2(241, 17)
+
+[node name="joystick" parent="汽车/Camera2D" instance=ExtResource("1_7l50t")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -358.0
+offset_top = 296.0
+offset_right = -358.0
+offset_bottom = 296.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [node name="ReturnButton" type="Button" parent="."]
 anchors_preset = 1
@@ -43,5 +54,6 @@ grow_horizontal = 0
 theme_override_fonts/font = ExtResource("4_mc2qg")
 theme_override_font_sizes/font_size = 64
 text = "返回"
+metadata/_edit_use_anchors_ = true
 
 [connection signal="pressed" from="ReturnButton" to="." method="_on_return_button_pressed"]

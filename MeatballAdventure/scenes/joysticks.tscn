@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://dxtmgslx5uo3l"]
+
+[ext_resource type="Texture2D" uid="uid://cq05drgcrk65o" path="res://MeatballAdventure/sprites/world_tileset.png" id="1_6tbxc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1d33b"]
+atlas = ExtResource("1_6tbxc")
+region = Rect2(112, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdbra"]
+atlas = ExtResource("1_6tbxc")
+region = Rect2(128, 96, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v826o"]
+load_path = "res://.godot/imported/world_tileset.png-bf5ad57737abdffbf627459fee5b464b.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ipfl"]
+atlas = SubResource("CompressedTexture2D_v826o")
+region = Rect2(112, 112, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_omdil"]
+atlas = ExtResource("1_6tbxc")
+region = Rect2(128, 112, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_en6w3"]
+atlas = ExtResource("1_6tbxc")
+region = Rect2(112, 128, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_150yd"]
+atlas = ExtResource("1_6tbxc")
+region = Rect2(128, 128, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rmw61"]
+atlas = ExtResource("1_6tbxc")
+region = Rect2(112, 96, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x3hxt"]
+atlas = ExtResource("1_6tbxc")
+region = Rect2(128, 96, 16, 16)
+
+[node name="Buttons" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_top = -93.0
+offset_right = 1.0
+offset_bottom = -93.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
+position = Vector2(15, -3)
+texture_normal = SubResource("AtlasTexture_1d33b")
+texture_pressed = SubResource("AtlasTexture_vdbra")
+action = "move_left"
+
+[node name="TouchScreenButton2" type="TouchScreenButton" parent="."]
+position = Vector2(47, -3)
+texture_normal = SubResource("AtlasTexture_1ipfl")
+texture_pressed = SubResource("AtlasTexture_omdil")
+action = "move_right"
+
+[node name="TouchScreenButton3" type="TouchScreenButton" parent="."]
+position = Vector2(199, -3)
+texture_normal = SubResource("AtlasTexture_en6w3")
+texture_pressed = SubResource("AtlasTexture_150yd")
+action = "jump"
+
+[node name="TouchScreenButton4" type="TouchScreenButton" parent="."]
+visible = false
+position = Vector2(124.875, 1.75)
+texture_normal = SubResource("AtlasTexture_rmw61")
+texture_pressed = SubResource("AtlasTexture_x3hxt")
+action = "accept"

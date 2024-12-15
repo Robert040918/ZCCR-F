@@ -1,0 +1,146 @@
+[gd_scene load_steps=3 format=3 uid="uid://fl6fs7typ33r"]
+
+[ext_resource type="Script" path="res://MainHUD/main_hud.gd" id="1_8hhrd"]
+[ext_resource type="FontFile" uid="uid://3o0lslg887sr" path="res://fonts/刘欢卡通手书 Regular.ttf" id="1_67b4k"]
+
+[node name="画布" type="Node"]
+script = ExtResource("1_8hhrd")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.259812, 0.390634, 0.411715, 1)
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.721569, 0.858824, 0.929412, 1)
+theme_override_fonts/font = ExtResource("1_67b4k")
+theme_override_font_sizes/font_size = 32
+text = "欢迎来到ZCCR-F
+这是一个真实的故事
+由ZCCR制作组倾情制作
+
+
+
+
+
+
+
+
+制作人：Robert，周茉抹
+🙏感谢🙏
+@吴克 @单狗鹏 @史炎 @许家小子 @姓巨的游戏鉴赏家 @王绿人
+"
+horizontal_alignment = 1
+vertical_alignment = 3
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 403.0
+offset_bottom = 129.0
+theme_override_colors/font_color = Color(1, 0.3241, 0.258945, 1)
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_67b4k")
+theme_override_font_sizes/font_size = 128
+text = "ZCCR-F"
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67b4k")
+theme_override_font_sizes/font_size = 64
+text = "家园(Home)"
+
+[node name="Button4" type="Button" parent="CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67b4k")
+theme_override_font_sizes/font_size = 64
+text = "肉球历险记"
+
+[node name="Button2" type="Button" parent="CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67b4k")
+theme_override_font_sizes/font_size = 64
+text = "Dodge the Creeps"
+
+[node name="Button3" type="Button" parent="CenterContainer/GridContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_67b4k")
+theme_override_font_sizes/font_size = 64
+text = "Wars(测试)"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -312.0
+offset_top = 26.0
+offset_right = -4.0
+offset_bottom = 606.0
+grow_horizontal = 0
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.235294, 0.941176, 0, 1)
+theme_override_fonts/font = ExtResource("1_67b4k")
+theme_override_font_sizes/font_size = 32
+text = "这里是素材展示区"
+horizontal_alignment = 2
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/line_spacing = 6
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("1_67b4k")
+text = "我们正在积极准备自己的素材，这是秘密
+素材图片将来会放在这，吸引你们的兴趣
+现在游戏有了非常棒的规划
+
+家园模块制作中~~~
+QQ群内的8个人我都会做，期待着哦
+肉球历险记游戏制作中~~~
+横版塞车游戏制作中~~~
+欢迎投稿
+
+游戏各个模块相互依存，剧情也会相互联系
+各位朋友请多多支持，这样我们的游戏才有生命力
+有意见尽管提，这可以帮我们更好的开发
+
+从现在起，游戏内容会变得引人入胜
+从现在起，我把游戏优化好后再给你们，没bug才玩的爽
+从现在起，游戏进入Dev(开发版本)阶段
+
+游戏会有存档，如果不小心删了游戏也不要紧
+害怕游戏数据丢失的提前给我说，我会给你记录的
+"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[connection signal="pressed" from="CenterContainer/GridContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Button2" to="." method="_on_minigame_button_pressed"]
+[connection signal="pressed" from="CenterContainer/GridContainer/Button3" to="." method="_on_war_button_pressed"]

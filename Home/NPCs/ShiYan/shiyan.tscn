@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0suait6i546k"]
+
+[ext_resource type="Texture2D" uid="uid://l40c3o847mp0" path="res://Home/NPCs/ShiYan/Art/ShiYan.png" id="1_mrpjb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_elv6y"]
+atlas = ExtResource("1_mrpjb")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tmqwu"]
+radius = 7.07107
+
+[node name="Shiyan" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = SubResource("AtlasTexture_elv6y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_tmqwu")
